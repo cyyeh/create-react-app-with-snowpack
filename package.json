@@ -5,7 +5,8 @@
     "test": "echo \"This template does not include a test runner by default.\" && exit 1",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "yarn build && netlify deploy"
   },
   "devDependencies": {
     "@snowpack/plugin-react-refresh": "^2.5.0",
